@@ -49,7 +49,7 @@ clearBtn.addEventListener('click', () => {
   operator = '';
 });
 const signBtn = document.querySelector('#sign');
-let negSign = signBtn.addEventListener('click', () => {
+signBtn.addEventListener('click', () => {
   if (display.textContent !== '0') {
     display.textContent = parseFloat(display.textContent * -1).toString();
     if (!operator) {
